@@ -3,47 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <title>Web Apis Code Quiz</title>
 </head>
 
 <body>
     <header>
-        <section id = "score" style = "display: none">
-        <input type = "button" value = "View High Score" onclick = "viewhighscore()">
-        Score: <var id ="score">
-        </var>
-        </section>
-        <section id = "Timer" style = "display: none">
-        Time Remaining: <span id = "timer"></span></section>
+    <section id = "score_keeper" style="display: none">
+        <input type="button" value="View High Scores" onclick="view_high_scores()"></br>
+        Score: <var id="score"> </var>
+    </section>
+
+    <section id= "countdownTimer" style="display: none">
+        Time Remaining: <span id="timer"></span>
+    </section>
+
     </header>
+
     <container>
-        <div id="homeContainer" class="none">
-            <h1>Welcome to the Code Quiz!</h1>
-            <p>Try answering the following code-related questions within the time limit. You have 75 seconds to complete the quiz.</p> 
-            <p> Don't forget: For each incorrect answer, you will be penalized 5 seconds from the timer. If the timer hits 0, it's game over!</p>
-            <p><strong>Ready to test your coding knowledge? Let's get started!</strong></p>
-            <br>
-            <button id="startBtn">Start Quiz</button>
-        </div>
-    </container>
-    <div id="quizContainer" style="display: none"> 
-        <h2 id="questionHeading"></h2>
-            <ul>
-                <div id="choices">
-                    <button id="answerChoiceA"></button>
-                </div>
-                <div>
-                    <button id="answerChoiceB"></button>
-                </div>
-                <div>
-                    <button id="answerChoiceC"></button>
-                </div>
-                <div>
-                    <button id="answerChoiceD"></button>
-                </div>
-            </ul>
+    <div id="homeContainer" class="none">
+        <h1>Welcome to the Code Quiz!</h1>
+        <p>Answer the following questions within the 75 second time limit.</p> 
+        <p>Each incorrect answer will result in losing 5 seconds from the timer When the time runs out the quiz is over.</p>
+        <br>
+        <button id="startBtn">Start Quiz</button>
     </div>
+    </container>
+
+        <div id="quizContainer" style="display: none"> 
+            <h2 id="questionHeading"></h2>
+                <ul>
+                    <div id="choices">
+                        <button id="answerChoiceA"></button>
+                    </div>
+                    <div>
+                        <button id="answerChoiceB"></button>
+                    </div>
+                    <div>
+                        <button id="answerChoiceC"></button>
+                    </div>
+                    <div>
+                        <button id="answerChoiceD"></button>
+                    </div>
+                </ul>
+            </div>
 </body>
+
 <section id="AnswerResponse">
 </section>
 
@@ -61,7 +68,8 @@
     <div id="high_scores"></div>
         <input type="button" value="Go Back" id="go_back" onclick="go_home()">
         <input type="button" id="Clear Highscores" value ="clear" onclick="clear_hs()">
-</div>
+    </div>
 
-<script src="script.js"></script>
-</html>
+    <script src="./assets/script.js"></script>
+
+</html> 

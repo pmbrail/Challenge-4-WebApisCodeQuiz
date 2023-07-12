@@ -19,7 +19,7 @@
   
   #scoreDisplay {
     float: left;
-    color: darkcyan;
+    color: purple;
   }
   
   #scoreDisplay:hover {
@@ -28,7 +28,7 @@
   }
   
   #timerDisplay {
-    color: darkcyan;
+    color: purple;
     float: right;
     }
   
@@ -39,11 +39,11 @@
   }
   
   button {
-      background-color: teal;
+      background-color: purple;
       color: white;
       width: auto;
-      border-radius: 15px;
-      height: 50px;
+      border-radius: 20px;
+      height: 75px;
       font-size: larger;
   }
   
